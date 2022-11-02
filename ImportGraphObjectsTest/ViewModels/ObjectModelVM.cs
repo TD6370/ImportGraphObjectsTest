@@ -93,7 +93,7 @@ namespace ImportGraphObjectsTest.ViewModels
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error on init ObjectModel");
+                Logger.Error(ex, "Error on init ObjectModelVM");
             }
         }
     }

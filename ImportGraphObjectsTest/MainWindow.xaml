@@ -55,16 +55,16 @@
                             >
                         <DataGrid.Columns>
 
-                            <DataGridTextColumn Header="Name" Binding="{Binding Name}"  Width="*"/>
-                            <DataGridTextColumn Header="Distance" Binding="{Binding Distance}"/>
-                            <DataGridTextColumn Header="Angle" Binding="{Binding Angle}"/>
-                            <DataGridTextColumn Header="Width" Binding="{Binding Width}"/>
-                            <DataGridTextColumn Header="Hegth" Binding="{Binding Hegth}"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}"  Width="*"/>
+                            <DataGridTextColumn Header="Distance" Binding="{Binding Distance, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Angle" Binding="{Binding Angle, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Width" Binding="{Binding Width, UpdateSourceTrigger=PropertyChanged}"/>
+                            <DataGridTextColumn Header="Hegth" Binding="{Binding Hegth, UpdateSourceTrigger=PropertyChanged}"/>
                             <DataGridTemplateColumn Header="IsDefect" Width="Auto">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <Grid>
-                                            <CheckBox IsChecked="{Binding IsDefect, Mode=TwoWay}"/>
+                                            <CheckBox IsChecked="{Binding IsDefect, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
                                         </Grid>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
@@ -113,9 +113,12 @@
                         </ItemsControl>
                     </Border>
                     <Grid
+                        Grid.Row="1"
                         Name="gridGraph"
+                        Margin="5"
                         >
                         <coltrols:PraghControl
+                            VerticalAlignment="Bottom"
                             DataContext="{Binding ObjectsImport}"
                             />
                     </Grid>

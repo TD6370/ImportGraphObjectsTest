@@ -13,7 +13,8 @@ using System.Windows.Data;
 
 namespace ImportGraphObjectsTest.ViewModels
 {
-    public class ObjectsCollection : ObservableCollection<ObjectModel>
+    //public class ObjectsCollection : ObservableCollection<ObjectModel>
+    public class ObjectsCollection : ObservableCollection<ObjectModelVM>
     {
         public void AddRange(List<string> lines)
         {
@@ -42,9 +43,14 @@ namespace ImportGraphObjectsTest.ViewModels
             });
         }
 
-        private ObjectModel ParseLine(string line)
+        //private ObjectModel ParseLine(string line)
+        //{
+        //    return new ObjectModel(line);
+        //}
+
+        private ObjectModelVM ParseLine(string line)
         {
-            return new ObjectModel(line);
+            return new ObjectModelVM(line);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

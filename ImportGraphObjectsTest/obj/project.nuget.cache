@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nfbN3m6bE+Ts8RcyfmUP6M4RQl7v2jbej0PcSaoDM+JFkdzGc+aWhLmpXhIt+j8sqsPqw+8va6Mkn8E/P8vyNw==",
+  "dgSpecHash": "HagHRrNzWfxiQ95kSaZnCx+lrVN124CJIA31o6UQn0xPd+jjV5EfUWxiXOUivsHCl5o2yCxLVzoP7agGW64qlA==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\TESTS\\ImportGraphObjectsTest\\ImportGraphObjectsTest\\ImportGraphObjectsTest.csproj",
+  "projectFilePath": "E:\\Projects\\TESTS\\GitImportGraphObjects\\ImportGraphObjectsTest\\ImportGraphObjectsTest.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

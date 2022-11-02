@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\TESTS\\ImportGraphObjectsTest\\ImportGraphObjectsTest\\ImportGraphObjectsTest.csproj",
+      "projectUniqueName": "E:\\Projects\\TESTS\\GitImportGraphObjects\\ImportGraphObjectsTest\\ImportGraphObjectsTest.csproj",
       "projectName": "ImportGraphObjectsTest",
-      "projectPath": "E:\\Projects\\TESTS\\ImportGraphObjectsTest\\ImportGraphObjectsTest\\ImportGraphObjectsTest.csproj",
+      "projectPath": "E:\\Projects\\TESTS\\GitImportGraphObjects\\ImportGraphObjectsTest\\ImportGraphObjectsTest.csproj",
       "packagesPath": "C:\\Users\\Hexagon\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\TESTS\\ImportGraphObjectsTest\\ImportGraphObjectsTest\\obj\\",
+      "outputPath": "E:\\Projects\\TESTS\\GitImportGraphObjects\\ImportGraphObjectsTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hexagon\\AppData\\Roaming\\NuGet\\NuGet.Config",

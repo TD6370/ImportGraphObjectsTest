@@ -22,13 +22,17 @@ namespace ImportGraphObjects.ViewModels
             }
         }
 
-        private ObjectModel m_selectedObject;
-        public ObjectModel SelectedObject 
+        private ObjectModelVM m_selectedObject;
+        public ObjectModelVM SelectedObject
         {
             get => m_selectedObject;
-            set { 
-                m_selectedObject = value;
-                SelectedObjectParams = new ObjectParamsCollection(m_selectedObject);
+            set
+            {
+                if (m_selectedObject != value)
+                {
+                    m_selectedObject = value;
+                    SelectedObjectParams = new ObjectParamsCollection(m_selectedObject);
+                }
             }
         }
 
