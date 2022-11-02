@@ -85,16 +85,22 @@ namespace ImportGraphObjectsTest.ViewModels
             {
                 var paramsModel = line.Split(';');
                 Name = paramsModel[0];
-                Distance = double.Parse(paramsModel[1]);
-                Angle = double.Parse(paramsModel[2]);
-                Width = double.Parse(paramsModel[3]);
-                Hegth = double.Parse(paramsModel[4]);
+                Distance = DoubleParse(paramsModel[1]);
+                Angle = DoubleParse(paramsModel[2]);
+                Width = DoubleParse(paramsModel[3]);
+                Hegth = DoubleParse(paramsModel[4]);
                 IsDefect = paramsModel[5].Equals("yes") ? true : false;
             }
             catch (Exception ex)
             {
                 Logger.Error(ex, "Error on init ObjectModelVM");
+                throw;
             }
+        }
+
+        private double DoubleParse(string value)
+        {
+            return double.Parse(value.Replace(',', '.'));
         }
     }
 }

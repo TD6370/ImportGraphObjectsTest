@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace ImportGraphObjectsTest.Engine
 {
@@ -54,7 +55,7 @@ namespace ImportGraphObjectsTest.Engine
             });
         }
 
-        public static string GetPathFromSelectFile(string filter)
+        public static string GetPathFromSelectedFile(string filter)
         {
             var openFileDialog = new Microsoft.Win32.OpenFileDialog() { Filter = filter };
             var result = openFileDialog.ShowDialog();
@@ -62,8 +63,39 @@ namespace ImportGraphObjectsTest.Engine
             return openFileDialog.FileName;
         }
 
-        //var result = await Task.Run(() =>
-        //{
-        //}
+        public static List<string> ReadExcel()
+        {
+            string path = GetPathFromSelectedFile("file Excel (*.xlsx)|*.xlsx|file Excel (*.xls)|*.xls");
+            if (!string.IsNullOrEmpty(path))
+                return null;
+
+            Excel.Application objWorkExcel = new Excel.Application();
+            Excel.Workbook objWorkBook = objWorkExcel.Workbooks.Open(path);
+            Excel.Worksheet objWorkSheet = (Excel.Worksheet)objWorkBook.Sheets[1];
+            var lastCell = objWorkSheet.Cells.SpecialCells(Excel.XlCellType.xlCellTypeLastCell);
+                                                                                                
+            int lastColumn = (int)lastCell.Column;
+            int lastRow = (int)lastCell.Row;
+
+
+            List<string> lines = new List<string>();
+            string line = string.Empty;
+
+            for (int i = 1; i < lastRow; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    var value = objWorkSheet.Cells[i + 1, j + 1].ToString();
+                    line += $"{value};";
+                }
+                lines.Add(line);
+                line = string.Empty;
+            }
+
+            objWorkBook.Close(false, Type.Missing, Type.Missing);
+            objWorkExcel.Quit();
+            GC.Collect();
+            return lines;
+        }
     }
 }

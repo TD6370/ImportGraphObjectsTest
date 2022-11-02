@@ -48,3 +48,5 @@ E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ref\ImportGraphObjectsTest.dll
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.pdb
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.genruntimeconfig.cache
+E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\bin\Debug\net5.0-windows\Microsoft.Office.Interop.Excel.dll
+E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.csproj.CopyComplete

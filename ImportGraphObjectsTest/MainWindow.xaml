@@ -39,11 +39,6 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="auto"/>
-                    </Grid.RowDefinitions>
-                    
                     <DataGrid
                             VirtualizingStackPanel.IsVirtualizing="True"
                             ItemsSource="{Binding ObjectsImport}" 
@@ -71,17 +66,6 @@
                             </DataGridTemplateColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <StackPanel Orientation="Horizontal"
-                                Grid.Row="1"
-                                Margin="5,0,5,5">
-                        <TextBlock
-                            Text="Total loaded:"
-                            />
-                        <TextBlock
-                            Margin="5,0"
-                            Text="{Binding ObjectsCount, StringFormat={}{0:#,#}}"
-                            />
-                    </StackPanel>
                 </Grid>
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>

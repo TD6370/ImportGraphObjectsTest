@@ -13,21 +13,13 @@ using System.Windows.Data;
 
 namespace ImportGraphObjectsTest.ViewModels
 {
-    //public class ObjectsCollection : ObservableCollection<ObjectModel>
     public class ObjectsCollection : ObservableCollection<ObjectModelVM>
     {
         public void AddRange(List<string> lines)
         {
-            try
+            foreach (var line in lines)
             {
-                foreach (var item in lines)
-                {
-                    Add(ParseLine(item));
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger.Error(ex, "Error on ObjectsCollection.AddRange");
+                Add(new ObjectModelVM(line));
             }
         }
 
@@ -41,22 +33,6 @@ namespace ImportGraphObjectsTest.ViewModels
             {
                 AddRange(linesNew);
             });
-        }
-
-        //private ObjectModel ParseLine(string line)
-        //{
-        //    return new ObjectModel(line);
-        //}
-
-        private ObjectModelVM ParseLine(string line)
-        {
-            return new ObjectModelVM(line);
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName] string prop = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
     }
 }

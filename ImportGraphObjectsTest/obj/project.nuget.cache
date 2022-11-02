@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HagHRrNzWfxiQ95kSaZnCx+lrVN124CJIA31o6UQn0xPd+jjV5EfUWxiXOUivsHCl5o2yCxLVzoP7agGW64qlA==",
+  "dgSpecHash": "jIoQUVzqUvXTUBw36lrfpIIGwGZrynrkMUKFejhQNRL2lU/W4SHtWv19UCAyAFxuzhr8e6MbUBQonGL4w9dnow==",
   "success": true,
   "projectFilePath": "E:\\Projects\\TESTS\\GitImportGraphObjects\\ImportGraphObjectsTest\\ImportGraphObjectsTest.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Hexagon\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -234,3 +234,329 @@ ver: 1.0.0.0	PC: DESKTOP-IR14QEI
    at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
    at System.Threading.ThreadPoolWorkQueue.Dispatch()
    at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:05:15 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c.<ImportObjectsExcelAsync>b__19_0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 126
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c.<ImportObjectsExcelAsync>b__19_0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 126
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:06:27 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c.<ImportObjectsExcelAsync>b__19_0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 126
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c.<ImportObjectsExcelAsync>b__19_0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 126
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:08:45 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c.<ImportObjectsExcelAsync>b__19_0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 129
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c.<ImportObjectsExcelAsync>b__19_0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:08:45 PM] Error on init ObjectModelVM: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 88
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 88
+   at ImportGraphObjectsTest.ViewModels.ObjectsCollection.ParseLine(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectsCollection.cs:line 48
+   at ImportGraphObjectsTest.ViewModels.ObjectsCollection.AddRange(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectsCollection.cs:line 24
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.ImportObjectsExcelAsync() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 140
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.ContinuationWrapper.Invoke()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c__DisplayClass6_0.<GetActionLogDelegate>b__0()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c.<.cctor>b__8_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext(Object state)
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.Run()
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at System.Windows.Application.Run()
+   at ImportGraphObjectsTest.App.Main()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:10:14 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c.<ImportObjectsExcelAsync>b__19_0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 129
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c.<ImportObjectsExcelAsync>b__19_0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 129
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:10:14 PM] Error on init ObjectModelVM: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 88
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 88
+   at ImportGraphObjectsTest.ViewModels.ObjectsCollection.ParseLine(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectsCollection.cs:line 48
+   at ImportGraphObjectsTest.ViewModels.ObjectsCollection.AddRange(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectsCollection.cs:line 24
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.ImportObjectsExcelAsync() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 140
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.ContinuationWrapper.Invoke()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c__DisplayClass6_0.<GetActionLogDelegate>b__0()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c.<.cctor>b__8_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext(Object state)
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.Run()
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at System.Windows.Application.Run()
+   at ImportGraphObjectsTest.App.Main()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:13:39 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:13:42 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:13:48 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:14:20 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:15:03 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:15:18 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:17:06 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:19:34 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:22:14 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 130
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/2/2022 9:31:26 PM] Error on ImportObjectsExcelAsync: System.IO.FileNotFoundException: Could not load file or assembly 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'. The system cannot find the file specified.
+File name: 'office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c'
+   at ImportGraphObjectsTest.Engine.Storage.ReadExcel()
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 132
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 73
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass19_0.<ImportObjectsExcelAsync>b__0() in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 132
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()

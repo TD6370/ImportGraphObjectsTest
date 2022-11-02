@@ -2,9 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ImportGraphObjectsTest.ViewModels
 {
@@ -14,6 +11,9 @@ namespace ImportGraphObjectsTest.ViewModels
 
         public ObjectParamsCollection(ObjectModelVM objectModel)
         {
+            if (objectModel == null)
+                return;
+
             objectModel.PropertyChanged += (model, e) =>
             {
                 Update(model as ObjectModelVM);
@@ -23,6 +23,9 @@ namespace ImportGraphObjectsTest.ViewModels
 
         private void Update(ObjectModelVM objectModel)
         {
+            if (objectModel == null)
+                return;
+
             Clear();
             Add(new ObjectParams(nameof(objectModel.Name), objectModel.Name));
             Add(new ObjectParams(nameof(objectModel.Distance), objectModel.Distance.ToString()));

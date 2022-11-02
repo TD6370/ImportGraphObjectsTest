@@ -1,9 +1,10 @@
 ﻿using ImportGraphObjectsTest.Engine;
-using ImportGraphObjectsTest.Models;
 using ImportGraphObjectsTest.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace ImportGraphObjects.ViewModels
 {
@@ -36,17 +37,6 @@ namespace ImportGraphObjects.ViewModels
             }
         }
 
-        private int m_objectsCount;
-        public int ObjectsCount
-        {
-            get => m_objectsCount;
-            set
-            {
-                m_objectsCount = value;
-                OnPropertyChanged(nameof(ObjectsCount));
-            }
-        }
-
         public ApplicationViewModel()
         {
         }
@@ -57,8 +47,16 @@ namespace ImportGraphObjects.ViewModels
             {
                 return new RelayCommand(obj =>
                 {
-                    ImportObjectsCSV();
-                });
+                    try 
+                    { 
+                        ImportObjectsCSV();
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.Error(ex, "Error on ImportObjectsCSV");
+                        MessageBox.Show(ex.Message, "Error on ImportObjectsCSV", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+            });
             }
         }
 
@@ -68,61 +66,81 @@ namespace ImportGraphObjects.ViewModels
             {
                 return new RelayCommand(obj =>
                 {
-                    ImportObjectsXLS();
+                    try 
+                    {
+                        ImportObjectsExcelAsync();
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.Error(ex, "Error on ImportObjectsExcelAsync");
+                        MessageBox.Show(ex.Message, "Error on ImportObjectsExcelAsync", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 });
             }
         }
 
-        private void ImportObjectsXLS()
+        private void ImportObjectsCSV_1()
         {
-
-        }
-
-        private void ImportObjectsCSV_()
-        {
-            bool isLineTittle = true;
+            ObjectsImport.Clear();
+            bool isLineTitle = true;
 
             Action<List<string>> actoinLinesOut = lines =>
             {
-                if (isLineTittle && lines.Any())
+                if (isLineTitle && lines.Any())
                 {
                     lines.RemoveAt(0);
-                    isLineTittle = false;
+                    isLineTitle = false;
                 }
                 ObjectsImport.AddRange(lines);
-                ObjectsCount = ObjectsImport.Count();
             };
 
-            string path = Storage.GetPathFromSelectFile("CSV Files (*.csv)|*.csv");
+            string path = Storage.GetPathFromSelectedFile("CSV Files (*.csv)|*.csv");
             if(!string.IsNullOrEmpty(path))
                 Storage.ReadFileAsync(path, actoinLinesOut, 1000);
         }
 
         private void ImportObjectsCSV()
         {
-            bool isLineTittle = true;
-            int count = 0;
+            ObjectsImport.Clear();
+            bool isLineTitle = true;
 
             Action<List<string>> actoinLinesOut = lines =>
             {
-                if(isLineTittle && lines.Any())
+                if(isLineTitle && lines.Any())
                 {
                     lines.RemoveAt(0);
-                    isLineTittle = false;
+                    isLineTitle = false;
                 }
                 ObjectsImport.Update(lines);
-                count += lines.Count;
-
-                WpfHelper.InvokeMethod(() =>
-                {
-                    ObjectsCount = count;
-                });
             };
 
-            string path = Storage.GetPathFromSelectFile("CSV Files (*.csv)|*.csv");
+            string path = Storage.GetPathFromSelectedFile("CSV Files (*.csv)|*.csv");
             if (!string.IsNullOrEmpty(path))
                 Storage.ReadFile(path, actoinLinesOut, 1000);
         }
 
+        private async Task ImportObjectsExcelAsync()
+        {
+            Exception exeptionResult = null;
+            ObjectsImport.Clear();
+
+            var lines = await Task.Run(() =>
+            {
+                try
+                {
+                    return Storage.ReadExcel();
+                }
+                catch (Exception ex)
+                {
+                    exeptionResult = ex;
+                    Logger.Error(ex, "Error on ImportObjectsExcelAsync");
+                }
+                return null;
+            });
+            if (lines != null)
+                ObjectsImport.AddRange(lines);
+            if (exeptionResult != null)
+                MessageBox.Show(exeptionResult.Message, "Error on ImportObjectsExcelAsync", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
     }
 }

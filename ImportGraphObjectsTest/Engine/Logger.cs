@@ -19,45 +19,24 @@ namespace ImportGraphObjectsTest.Engine
 
             SaveTitle(ref message);
 
-            //try
-            //{
-                lock (m_lock)
+            lock (m_lock)
+            {
+                using (StreamWriter streamWriter = new StreamWriter(LogPath, true))
                 {
-                    using (StreamWriter streamWriter = new StreamWriter(LogPath, true))
-                    {
-                        streamWriter.WriteLine(message);
-                        streamWriter.Close();
-                    }
+                    streamWriter.WriteLine(message);
+                    streamWriter.Close();
                 }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show($"Error on save log:\n{ex.Message}\n\nSave log:\n{message}", "Error on FileLogger.Save", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
+            }
         }
 
         private static void SaveTitle(ref string message)
         {
-            //try
-            //{
-                //if (m_isLogCreateChecked)
-                //    return;
+            System.Reflection.Assembly executingAssembly = System.Reflection.Assembly.GetExecutingAssembly();
+            string version = executingAssembly.GetName().Version.ToString();
+            string appName = executingAssembly.GetName().Name;
+            string splitter = new string('=', 100) + "\n";
 
-                System.Reflection.Assembly executingAssembly = System.Reflection.Assembly.GetExecutingAssembly();
-                string version = executingAssembly.GetName().Version.ToString();
-                string appName = executingAssembly.GetName().Name;
-                string splitter = new string('=', 100) + "\n";
-
-                message = $"{splitter}ver: {version}\tPC: {Environment.MachineName}\n{message}";
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show($"Error on save title log:\n{ex.Message}\n\nSave log:\n{message}", "Error on FileLogger.SaveTitle", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
-            //finally
-            //{
-            //    m_isLogCreateChecked = true;
-            //}
+            message = $"{splitter}ver: {version}\tPC: {Environment.MachineName}\n{message}";
         }
 
         public static void Error(Exception ex, string title = "", string description = "")
