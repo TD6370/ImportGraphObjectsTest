@@ -7,12 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ImportGraphObjectsTest.Controls
@@ -22,13 +17,13 @@ namespace ImportGraphObjectsTest.Controls
     /// </summary>
     public partial class GraphControl : UserControl
     {
-        const double BORDER_SIZE = 45;
+        public double FrameHeight => 12;
+        public double FrameWidth => 20;
+
+        const double BORDER_SIZE_HEIGHT = 45;
         const int LIMIT_DRAW_OBJECTS = 500;
         private double m_sizeFactor = 1;
         private Window m_parentWindow;
-
-        public double FrameHeight { get; set; } = 20;
-        public double FrameWidth { get; set; } = 20;
         
         public GraphControl()
         {
@@ -80,12 +75,15 @@ namespace ImportGraphObjectsTest.Controls
                 width = obj.Width;
                 height = obj.Hegth;
 
-                color = Brushes.LimeGreen;
-                colorBorder = Brushes.Black;
-                if (IsChecked(obj))
+                if (obj.IsSelected)
                 {
                     color = Brushes.Yellow;
                     colorBorder = Brushes.OrangeRed;
+                }
+                else
+                {
+                    color = Brushes.LimeGreen;
+                    colorBorder = Brushes.Black;
                 }
 
                 DrawRect(x, y, width, height, color, colorBorder);
@@ -108,6 +106,8 @@ namespace ImportGraphObjectsTest.Controls
             objDraw.Stroke = colorBorder;
             objDraw.StrokeThickness = strokeThickness;
             objDraw.Data = rectangleGeometry;
+            objDraw.SnapsToDevicePixels = true;
+            objDraw.UseLayoutRounding = true;
 
             CanvasDraw.Children.Add(objDraw);
         }
@@ -120,13 +120,11 @@ namespace ImportGraphObjectsTest.Controls
         private void DrawGrid()
         {
             SolidColorBrush color = Brushes.DarkGray;
-            foreach (var next in Enumerable.Range(1, 19))
-            {
-                // rows
-                DrawLine(0, next, FrameWidth, next, color, 1);
-                // columns
-                DrawLine(next, 0, next, FrameHeight, color, 1);
-            }
+            foreach (var x in Enumerable.Range(1, (int)FrameWidth))
+                DrawLine(x, 0, x, FrameHeight, color, 1);
+
+            foreach (var y in Enumerable.Range(1, (int)FrameHeight))
+                DrawLine(0, y, FrameWidth, y, color, 1);
         }
 
         private void DrawLine(double x, double y, double x2, double y2, SolidColorBrush color, int strokeThickness = 1)
@@ -148,11 +146,6 @@ namespace ImportGraphObjectsTest.Controls
             CanvasDraw.Children.Add(objDraw);
         }
 
-        private bool IsChecked(ObjectModelVM objectModel)
-        {
-            return objectModel.Equals(ObjectsDraw.SelectedObject);
-        }
-
         private void CrearDraw()
         {
             CanvasDraw.Children.Clear();
@@ -168,7 +161,7 @@ namespace ImportGraphObjectsTest.Controls
             var heightLimit = HeightLimit();
             var sizeFactor = widthCanvas / (FrameWidth);
             if (sizeFactor * FrameHeight > heightLimit)
-                sizeFactor = heightLimit / (FrameWidth);
+                sizeFactor = heightLimit / (FrameHeight);
 
             m_sizeFactor = sizeFactor < 1 ? 1 : sizeFactor;
         }
@@ -178,7 +171,7 @@ namespace ImportGraphObjectsTest.Controls
             if (m_parentWindow == null)
                 return FrameHeight;
             Point point = this.TransformToAncestor(m_parentWindow).Transform(new Point(0, 0));
-            return m_parentWindow.ActualHeight - (point.Y + BORDER_SIZE);
+            return m_parentWindow.ActualHeight - (point.Y + BORDER_SIZE_HEIGHT);
         }
     }
 }

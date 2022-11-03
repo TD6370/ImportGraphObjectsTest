@@ -1,9 +1,5 @@
 ﻿using ImportGraphObjectsTest.Engine;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ImportGraphObjectsTest.ViewModels
 {
@@ -74,6 +70,8 @@ namespace ImportGraphObjectsTest.ViewModels
                 OnPropertyChanged(nameof(IsDefect));
             }
         }
+
+        public bool IsSelected { get; set; }
 
         public ObjectModelVM()
         {

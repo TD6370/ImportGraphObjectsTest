@@ -50,3 +50,4 @@ E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\bin\Debug\net5.0-
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.csproj.CopyComplete
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\Controls\GraphControl.g.cs
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\Controls\GraphControl.baml
+E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\Styles.baml

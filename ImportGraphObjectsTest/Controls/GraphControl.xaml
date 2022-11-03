@@ -9,6 +9,7 @@
     <Grid
         >
         <Canvas x:Name="CanvasDraw"
+                SnapsToDevicePixels="True"
                 SizeChanged="CanvasDraw_SizeChanged"/>
     </Grid>
 </UserControl>

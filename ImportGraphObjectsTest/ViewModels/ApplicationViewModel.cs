@@ -31,8 +31,11 @@ namespace ImportGraphObjects.ViewModels
             {
                 if (m_selectedObject != value)
                 {
+                    if (m_selectedObject != null)
+                        m_selectedObject.IsSelected = false;
+
                     m_selectedObject = value;
-                    ObjectsImport.SelectedObject = m_selectedObject;
+                    m_selectedObject.IsSelected = true;
                     SelectedObjectParams = new ObjectParamsCollection(m_selectedObject);
                 }
             }
