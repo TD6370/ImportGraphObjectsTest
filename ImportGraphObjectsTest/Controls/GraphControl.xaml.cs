@@ -52,23 +52,6 @@ namespace ImportGraphObjectsTest.Controls
         public static readonly DependencyProperty PlacementProperty =
             DependencyProperty.Register("ObjectsDraw", typeof(ObjectsCollection), typeof(GraphControl));
 
-        //public static readonly DependencyProperty PlacementProperty =
-        //    DependencyProperty.Register("ObjectsDraw", typeof(ObjectsCollection), typeof(GraghControl),
-        //        new UIPropertyMetadata(null, new PropertyChangedCallback(ObjectsDrawChanged)));
-
-        //private static void ObjectsDrawChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
-        //{
-        //    GraghControl control = obj as GraghControl;
-        //    ObjectsCollection value = (ObjectsCollection)e.NewValue;
-
-        //    //value.CollectionChanged += ObjectsCollectionChanged;
-        //}
-
-        //private static void ObjectsCollectionChanged(object obj, NotifyCollectionChangedEventArgs args)
-        //{
-
-        //}
-
         private void RenderFrame(object sender, EventArgs e)
         {
             CrearDraw();

@@ -24,17 +24,5 @@ namespace ImportGraphObjectsTest.ViewModels
                 Add(new ObjectModelVM(line));
             }
         }
-
-        public void Update(List<string> lines)
-        {
-            if (!lines.Any())
-                return;
-
-            var linesNew = lines.ToList();
-            WpfHelper.InvokeMethod(() =>
-            {
-                AddRange(linesNew);
-            });
-        }
     }
 }

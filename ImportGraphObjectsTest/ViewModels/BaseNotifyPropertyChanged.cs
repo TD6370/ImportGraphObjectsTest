@@ -15,12 +15,5 @@ namespace ImportGraphObjectsTest.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
-
-        //public void OnPropertyChanged(string propertyName)
-        //{
-        //    if (PropertyChanged != null)
-        //        PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        //}
-        //public event PropertyChangedEventHandler PropertyChanged;
     }
 }

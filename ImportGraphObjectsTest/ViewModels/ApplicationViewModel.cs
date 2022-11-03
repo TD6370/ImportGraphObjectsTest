@@ -100,25 +100,6 @@ namespace ImportGraphObjects.ViewModels
                 Storage.ReadFileAsync(path, actoinLinesOut, 1000);
         }
 
-        private void ImportObjectsCSV_2()
-        {
-            ObjectsImport.Clear();
-            bool isLineTitle = true;
-
-            Action<List<string>> actoinLinesOut = lines =>
-            {
-                if(isLineTitle && lines.Any())
-                {
-                    lines.RemoveAt(0);
-                    isLineTitle = false;
-                }
-                ObjectsImport.Update(lines);
-            };
-
-            string path = Storage.GetPathFromSelectedFile("CSV Files (*.csv)|*.csv");
-            if (!string.IsNullOrEmpty(path))
-                Storage.ReadFile(path, actoinLinesOut, 1000);
-        }
 
         private async Task ImportObjectsExcelAsync()
         {
