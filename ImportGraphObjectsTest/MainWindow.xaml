@@ -8,6 +8,8 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Ipmort objects" 
+        MinHeight="500"
+        MinWidth="500"
         Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -46,16 +48,17 @@
                             AutoGenerateColumns="False"
                             CanUserDeleteRows="False"
                             CanUserAddRows="False"
+                            SelectionMode="Single"
                             Margin="5"
                             >
                         <DataGrid.Columns>
 
-                            <DataGridTextColumn Header="Name" Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}"  Width="*"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}" MinWidth="100"  Width="Auto"/>
                             <DataGridTextColumn Header="Distance" Binding="{Binding Distance, UpdateSourceTrigger=PropertyChanged}"/>
                             <DataGridTextColumn Header="Angle" Binding="{Binding Angle, UpdateSourceTrigger=PropertyChanged}"/>
                             <DataGridTextColumn Header="Width" Binding="{Binding Width, UpdateSourceTrigger=PropertyChanged}"/>
                             <DataGridTextColumn Header="Hegth" Binding="{Binding Hegth, UpdateSourceTrigger=PropertyChanged}"/>
-                            <DataGridTemplateColumn Header="IsDefect" Width="Auto">
+                            <DataGridTemplateColumn Header="IsDefect" Width="*">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <Grid>
@@ -97,14 +100,13 @@
                         </ItemsControl>
                     </Border>
                     <Grid
-                        Grid.Row="1"
-                        Name="gridGraph"
-                        Margin="5"
-                        >
-                        <coltrols:PraghControl
-                            VerticalAlignment="Bottom"
-                            DataContext="{Binding ObjectsImport}"
-                            />
+                            Grid.Row="1"
+                            Name="gridGraph"
+                            Margin="5">
+                        <coltrols:GraphControl
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            ObjectsDraw="{Binding ObjectsImport}"/>
                     </Grid>
                 </Grid>
             </Grid>

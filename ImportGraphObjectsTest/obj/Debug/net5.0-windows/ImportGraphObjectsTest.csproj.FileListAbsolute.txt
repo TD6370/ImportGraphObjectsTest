@@ -31,13 +31,11 @@ E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\bin\Debug\net5.0-
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\bin\Debug\net5.0-windows\ref\ImportGraphObjectsTest.dll
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\bin\Debug\net5.0-windows\ImportGraphObjectsTest.pdb
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.csproj.AssemblyReference.cache
-E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\Controls\PraghControl.g.cs
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\MainWindow.g.cs
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\App.g.cs
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest_MarkupCompile.cache
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest_MarkupCompile.lref
-E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\Controls\PraghControl.baml
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\MainWindow.baml
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.g.resources
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.GeneratedMSBuildEditorConfig.editorconfig
@@ -50,3 +48,5 @@ E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.genruntimeconfig.cache
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\bin\Debug\net5.0-windows\Microsoft.Office.Interop.Excel.dll
 E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\ImportGraphObjectsTest.csproj.CopyComplete
+E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\Controls\GraphControl.g.cs
+E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\obj\Debug\net5.0-windows\Controls\GraphControl.baml

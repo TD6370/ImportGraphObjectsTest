@@ -32,6 +32,7 @@ namespace ImportGraphObjects.ViewModels
                 if (m_selectedObject != value)
                 {
                     m_selectedObject = value;
+                    ObjectsImport.SelectedObject = m_selectedObject;
                     SelectedObjectParams = new ObjectParamsCollection(m_selectedObject);
                 }
             }
@@ -79,7 +80,7 @@ namespace ImportGraphObjects.ViewModels
             }
         }
 
-        private void ImportObjectsCSV_1()
+        private void ImportObjectsCSV()
         {
             ObjectsImport.Clear();
             bool isLineTitle = true;
@@ -99,7 +100,7 @@ namespace ImportGraphObjects.ViewModels
                 Storage.ReadFileAsync(path, actoinLinesOut, 1000);
         }
 
-        private void ImportObjectsCSV()
+        private void ImportObjectsCSV_2()
         {
             ObjectsImport.Clear();
             bool isLineTitle = true;
