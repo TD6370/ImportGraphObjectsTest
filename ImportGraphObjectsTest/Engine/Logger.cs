@@ -12,7 +12,7 @@ namespace ImportGraphObjectsTest.Engine
         private static Object m_lock = new object();
         private static string LogPath = string.Concat(Environment.CurrentDirectory, "\\", "Log.txt");  
 
-        private static void Log(string message, string title = "")
+        public static void Log(string message, string title = "")
         {
             string date = DateTime.Now.ToString();
             message = $"[{date}] {title}: {message}";

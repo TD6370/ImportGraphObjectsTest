@@ -1,5 +1,6 @@
 ﻿using ImportGraphObjectsTest.Engine;
 using System;
+using System.Globalization;
 
 namespace ImportGraphObjectsTest.ViewModels
 {
@@ -91,14 +92,17 @@ namespace ImportGraphObjectsTest.ViewModels
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error on init ObjectModelVM");
+                Logger.Error(ex, "Error on init ObjectModelVM", $"line: {line}");
                 throw;
             }
         }
 
         private double DoubleParse(string value)
         {
-            return double.Parse(value.Replace(',', '.'));
+            double result;
+            if (!double.TryParse(value, NumberStyles.Float, CultureInfo.CurrentCulture, out result))
+                result = double.Parse(value.Replace(',', '.')); 
+            return result;
         }
     }
 }
