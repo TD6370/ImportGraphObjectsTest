@@ -610,3 +610,183 @@ ver: 1.0.0.0	PC: DESKTOP-IR14QEI
    at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
    at System.Threading.ThreadPoolWorkQueue.Dispatch()
    at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/3/2022 10:54:13 PM] Error on init ObjectModelVM: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Double.Parse(String s)
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM.DoubleParse(String value) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 101
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 86
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 52
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 86
+   at ImportGraphObjectsTest.ViewModels.ObjectsCollection.AddRange(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectsCollection.cs:line 12
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass17_0.<ImportObjectsCSV>b__0(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 98
+   at ImportGraphObjectsTest.Engine.Storage.ReadFileAsync(String path, Action`1 actionOut, Int32 limitLines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Storage.cs:line 30
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.ContinuationWrapper.Invoke()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c__DisplayClass6_0.<GetActionLogDelegate>b__0()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c.<.cctor>b__8_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.Run()
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at System.Windows.Application.Run()
+   at ImportGraphObjectsTest.App.Main()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/3/2022 10:54:53 PM] Error on init ObjectModelVM: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Double.Parse(String s)
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM.DoubleParse(String value) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 101
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 86
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 52
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 86
+   at ImportGraphObjectsTest.ViewModels.ObjectsCollection.AddRange(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectsCollection.cs:line 12
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass17_0.<ImportObjectsCSV>b__0(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 98
+   at ImportGraphObjectsTest.Engine.Storage.ReadFileAsync(String path, Action`1 actionOut, Int32 limitLines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Storage.cs:line 30
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.ContinuationWrapper.Invoke()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c__DisplayClass6_0.<GetActionLogDelegate>b__0()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c.<.cctor>b__8_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.Run()
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at System.Windows.Application.Run()
+   at ImportGraphObjectsTest.App.Main()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/3/2022 10:56:54 PM] Error on init ObjectModelVM: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Double.Parse(String s)
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM.DoubleParse(String value) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 101
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 86
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 52
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 86
+   at ImportGraphObjectsTest.ViewModels.ObjectsCollection.AddRange(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectsCollection.cs:line 16
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass17_0.<ImportObjectsCSV>b__0(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 98
+   at ImportGraphObjectsTest.Engine.Storage.ReadFileAsync(String path, Action`1 actionOut, Int32 limitLines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Storage.cs:line 30
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.ContinuationWrapper.Invoke()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c__DisplayClass6_0.<GetActionLogDelegate>b__0()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c.<.cctor>b__8_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.Run()
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at System.Windows.Application.Run()
+   at ImportGraphObjectsTest.App.Main()
+====================================================================================================
+ver: 1.0.0.0	PC: DESKTOP-IR14QEI
+[11/3/2022 10:59:01 PM] Error on init ObjectModelVM: System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Double.Parse(String s)
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM.DoubleParse(String value) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 101
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 86
+   at System.Environment.get_StackTrace()
+   at ImportGraphObjectsTest.Engine.Logger.Error(Exception ex, String title, String description) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Logger.cs:line 52
+   at ImportGraphObjectsTest.ViewModels.ObjectModelVM..ctor(String line) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectModelVM.cs:line 86
+   at ImportGraphObjectsTest.ViewModels.ObjectsCollection.AddRange(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ObjectsCollection.cs:line 17
+   at ImportGraphObjects.ViewModels.ApplicationViewModel.<>c__DisplayClass17_0.<ImportObjectsCSV>b__0(List`1 lines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\ViewModels\ApplicationViewModel.cs:line 98
+   at ImportGraphObjectsTest.Engine.Storage.ReadFileAsync(String path, Action`1 actionOut, Int32 limitLines) in E:\Projects\TESTS\GitImportGraphObjects\ImportGraphObjectsTest\Engine\Storage.cs:line 30
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.ExecutionContextCallback(Object s)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext(Thread threadPoolThread)
+   at System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AsyncStateMachineBox`1.MoveNext()
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.ContinuationWrapper.Invoke()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c__DisplayClass6_0.<GetActionLogDelegate>b__0()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c.<.cctor>b__8_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   at System.Windows.Threading.Dispatcher.Run()
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at System.Windows.Application.Run()
+   at ImportGraphObjectsTest.App.Main()

@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Windows;
 
 namespace ImportGraphObjectsTest.ViewModels
 {
@@ -7,9 +9,16 @@ namespace ImportGraphObjectsTest.ViewModels
     {
         public void AddRange(List<string> lines)
         {
-            foreach (var line in lines)
+            try
             {
-                Add(new ObjectModelVM(line));
+                foreach (var line in lines)
+                {
+                    Add(new ObjectModelVM(line));
+                }
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error on Filling ObjectsCollection", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

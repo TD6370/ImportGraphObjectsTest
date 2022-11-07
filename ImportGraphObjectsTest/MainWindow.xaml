@@ -44,8 +44,9 @@
         <Grid Grid.Row="1">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
                     <DataGrid
@@ -57,12 +58,12 @@
                             >
                         <DataGrid.Columns>
 
-                            <DataGridTextColumn Header="Name" Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}" MinWidth="100"  Width="Auto"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}" MinWidth="100"  Width="*"/>
                             <DataGridTextColumn Header="Distance" Binding="{Binding Distance, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:N1}}"/>
                             <DataGridTextColumn Header="Angle" Binding="{Binding Angle, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:N1}}"/>
                             <DataGridTextColumn Header="Width" Binding="{Binding Width, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:N1}}"/>
                             <DataGridTextColumn Header="Hegth" Binding="{Binding Hegth, UpdateSourceTrigger=PropertyChanged, StringFormat={}{0:N1}}"/>
-                            <DataGridTemplateColumn Header="IsDefect" Width="*">
+                            <DataGridTemplateColumn Header="IsDefect" Width="Auto">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <Grid>
@@ -74,7 +75,18 @@
                         </DataGrid.Columns>
                     </DataGrid>
                 </Grid>
-                <Grid Grid.Column="1">
+                <Grid
+                        Grid.Column="1"
+                        x:Name="splitter">
+                    <GridSplitter Width="5"
+                                  Background="#FFBDE0FF"
+                                  VerticalAlignment="Stretch"
+                                  HorizontalAlignment="Center"/>
+                </Grid>
+                
+                <Grid Grid.Column="2"
+                      x:Name="gridRight"
+                      >
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
